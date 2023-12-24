@@ -28,10 +28,10 @@ def launch_gradio():
             gr.File(label="上传PDF文件"),
             # gr.Textbox(label="源语言（默认：英文）", placeholder="English", value="English"),
             # gr.Textbox(label="目标语言（默认：中文）", placeholder="Chinese", value="Chinese")
-            gr.inputs.Dropdown(choices=language_option, label="源语言（默认：英文）", default="English"),
-            gr.inputs.Dropdown(choices=language_option, label="目标语言（默认：中文）", default="Chinese"),
-            gr.inputs.Dropdown(choices=translate_style_option, label="翻译风格（默认：小说）", default="novels"),
-            gr.inputs.Dropdown(choices=output_file_option, label="文件保存格式（默认：markdown）", default="markdown")
+            gr.Dropdown(choices=language_option, label="源语言（默认：英文）", value="English"),
+            gr.Dropdown(choices=language_option, label="目标语言（默认：中文）", value="Chinese"),
+            gr.Dropdown(choices=output_file_option, label="文件保存格式（默认：markdown）", value="markdown"),
+            gr.Dropdown(choices=translate_style_option, label="翻译风格（默认：小说）", value="novels")
         ],
         outputs=[
             gr.File(label="下载翻译文件")
