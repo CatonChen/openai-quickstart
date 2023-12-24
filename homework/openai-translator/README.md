@@ -85,6 +85,12 @@ export OPENAI_API_KEY="sk-xxx"
 python ai_translator/main.py --model_name "gpt-3.5-turbo" --input_file "your_input.pdf" --output_file_format "markdown" --source_language "English" --target_language "Chinese"
 ```
 
+### homework
+Display of homework results
+
+![sample_out](tests/Screenshot%202023-12-24_220158.png)
+
+
 ## License
 
 This project is licensed under the GPL-3.0 License. See the [LICENSE](LICENSE) file for details.
